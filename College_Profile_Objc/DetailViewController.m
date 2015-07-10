@@ -46,6 +46,25 @@
     return true;
 }
 
+
+- (IBAction)changePictureButtonTapped:(id)sender {
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc]init];
+    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    imagePicker.delegate = self;
+    [self presentViewController:imagePicker animated:true completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    if (! image)
+        image = info[UIImagePickerControllerEditedImage];
+    
+    self.collegeImageView.image = image;
+    college.image = image;
+    [picker dismissViewControllerAnimated:true completion:nil];
+    
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     MapViewController *dvc = (MapViewController *)segue.destinationViewController;
     dvc.locationName = college.name;

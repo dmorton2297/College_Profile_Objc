@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CollegeProfile-Swift.h"
 
-@interface DetailViewController : UIViewController <UITextFieldDelegate>
+@interface DetailViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property College *college;
 

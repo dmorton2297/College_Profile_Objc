@@ -32,7 +32,7 @@
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -112,14 +112,25 @@
                                     <outlet property="delegate" destination="jUC-bF-EZd" id="nm4-mr-yjj"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pA0-iL-eWn">
+                                <rect key="frame" x="247" y="470" width="106" height="30"/>
+                                <state key="normal" title="Change Picture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changePictureButtonTapped:" destination="jUC-bF-EZd" eventType="touchUpInside" id="Evu-OA-BEl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="87r-To-1S9" secondAttribute="centerX" id="1xP-MU-CwR"/>
+                            <constraint firstItem="pA0-iL-eWn" firstAttribute="top" secondItem="xoO-2z-tfD" secondAttribute="bottom" constant="8" id="Nrn-oi-zeb"/>
                             <constraint firstItem="ITh-Sb-meE" firstAttribute="top" secondItem="87r-To-1S9" secondAttribute="bottom" constant="15" id="Pzj-Gf-vtD"/>
                             <constraint firstAttribute="centerX" secondItem="ITh-Sb-meE" secondAttribute="centerX" id="S5K-gw-0dx"/>
                             <constraint firstAttribute="centerX" secondItem="xoO-2z-tfD" secondAttribute="centerX" id="UXR-th-beU"/>
                             <constraint firstItem="87r-To-1S9" firstAttribute="top" secondItem="GIo-w0-uHL" secondAttribute="bottom" constant="57" id="Uge-7k-f2F"/>
+                            <constraint firstAttribute="centerX" secondItem="pA0-iL-eWn" secondAttribute="centerX" id="u0W-MM-vcK"/>
                             <constraint firstItem="xoO-2z-tfD" firstAttribute="top" secondItem="ITh-Sb-meE" secondAttribute="bottom" constant="8" id="yuu-ET-Bo2"/>
                         </constraints>
                     </view>
