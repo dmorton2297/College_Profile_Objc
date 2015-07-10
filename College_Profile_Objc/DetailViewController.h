@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DetailViewController.h
 //  College_Profile_Objc
 //
 //  Created by Dan Morton on 7/9/15.
@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "CollegeProfile-Swift.h"
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface DetailViewController : UIViewController <UITextFieldDelegate>
 
-@property NSMutableArray *colleges;
+@property College *college;
 
 @end
-
-

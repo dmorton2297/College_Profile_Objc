@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C0D24331B4EFCA300D7DE1D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0D24321B4EFCA300D7DE1D /* DetailViewController.m */; };
+		5C9FE76F1B4F403900B8B292 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9FE76E1B4F403900B8B292 /* MapViewController.m */; };
+		5C9FE7711B4F415700B8B292 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9FE7701B4F415700B8B292 /* MapKit.framework */; };
+		5C9FE7731B4F42A800B8B292 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9FE7721B4F42A800B8B292 /* CoreLocation.framework */; };
 		5CE71CD21B4ECB9000B2082D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE71CD11B4ECB9000B2082D /* main.m */; };
 		5CE71CD51B4ECB9000B2082D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE71CD41B4ECB9000B2082D /* AppDelegate.m */; };
 		5CE71CD81B4ECB9000B2082D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE71CD71B4ECB9000B2082D /* ViewController.m */; };
@@ -14,6 +18,7 @@
 		5CE71CDD1B4ECB9000B2082D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE71CDC1B4ECB9000B2082D /* Images.xcassets */; };
 		5CE71CE01B4ECB9000B2082D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE71CDE1B4ECB9000B2082D /* LaunchScreen.xib */; };
 		5CE71CEC1B4ECB9000B2082D /* College_Profile_ObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE71CEB1B4ECB9000B2082D /* College_Profile_ObjcTests.m */; };
+		5CE71CF71B4ECBA400B2082D /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE71CF61B4ECBA400B2082D /* College.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C0D24311B4EFCA300D7DE1D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		5C0D24321B4EFCA300D7DE1D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		5C9FE76D1B4F403900B8B292 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		5C9FE76E1B4F403900B8B292 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		5C9FE7701B4F415700B8B292 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5C9FE7721B4F42A800B8B292 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5CE71CCC1B4ECB9000B2082D /* College_Profile_Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = College_Profile_Objc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE71CD01B4ECB9000B2082D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CE71CD11B4ECB9000B2082D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +51,8 @@
 		5CE71CE51B4ECB9000B2082D /* College_Profile_ObjcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = College_Profile_ObjcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE71CEA1B4ECB9000B2082D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CE71CEB1B4ECB9000B2082D /* College_Profile_ObjcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = College_Profile_ObjcTests.m; sourceTree = "<group>"; };
+		5CE71CF51B4ECBA400B2082D /* College_Profile_Objc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "College_Profile_Objc-Bridging-Header.h"; sourceTree = "<group>"; };
+		5CE71CF61B4ECBA400B2082D /* College.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C9FE7731B4F42A800B8B292 /* CoreLocation.framework in Frameworks */,
+				5C9FE7711B4F415700B8B292 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,8 @@
 		5CE71CC31B4ECB9000B2082D = {
 			isa = PBXGroup;
 			children = (
+				5C9FE7721B4F42A800B8B292 /* CoreLocation.framework */,
+				5C9FE7701B4F415700B8B292 /* MapKit.framework */,
 				5CE71CCE1B4ECB9000B2082D /* College_Profile_Objc */,
 				5CE71CE81B4ECB9000B2082D /* College_Profile_ObjcTests */,
 				5CE71CCD1B4ECB9000B2082D /* Products */,
@@ -83,8 +100,14 @@
 			children = (
 				5CE71CD31B4ECB9000B2082D /* AppDelegate.h */,
 				5CE71CD41B4ECB9000B2082D /* AppDelegate.m */,
+				5C0D24311B4EFCA300D7DE1D /* DetailViewController.h */,
+				5C0D24321B4EFCA300D7DE1D /* DetailViewController.m */,
+				5C9FE76D1B4F403900B8B292 /* MapViewController.h */,
+				5C9FE76E1B4F403900B8B292 /* MapViewController.m */,
 				5CE71CD61B4ECB9000B2082D /* ViewController.h */,
 				5CE71CD71B4ECB9000B2082D /* ViewController.m */,
+				5CE71CF61B4ECBA400B2082D /* College.swift */,
+				5CE71CF51B4ECBA400B2082D /* College_Profile_Objc-Bridging-Header.h */,
 				5CE71CD91B4ECB9000B2082D /* Main.storyboard */,
 				5CE71CDC1B4ECB9000B2082D /* Images.xcassets */,
 				5CE71CDE1B4ECB9000B2082D /* LaunchScreen.xib */,
@@ -163,6 +186,7 @@
 		5CE71CC41B4ECB9000B2082D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Dan Morton";
 				TargetAttributes = {
@@ -219,9 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C0D24331B4EFCA300D7DE1D /* DetailViewController.m in Sources */,
 				5CE71CD81B4ECB9000B2082D /* ViewController.m in Sources */,
 				5CE71CD51B4ECB9000B2082D /* AppDelegate.m in Sources */,
+				5C9FE76F1B4F403900B8B292 /* MapViewController.m in Sources */,
 				5CE71CD21B4ECB9000B2082D /* main.m in Sources */,
+				5CE71CF71B4ECBA400B2082D /* College.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +376,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = College_Profile_Objc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "College_Profile_Objc/College_Profile_Objc-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "CollegeProfile-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -359,9 +391,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = College_Profile_Objc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "College_Profile_Objc/College_Profile_Objc-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "CollegeProfile-Swift.h";
 			};
 			name = Release;
 		};
@@ -418,6 +454,7 @@
 				5CE71CF11B4ECB9000B2082D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CE71CF21B4ECB9000B2082D /* Build configuration list for PBXNativeTarget "College_Profile_ObjcTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +463,7 @@
 				5CE71CF41B4ECB9000B2082D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
